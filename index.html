@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERKALO</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #0088cc;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .tariffs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .tariff {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .tariff:hover {
+            transform: translateY(-5px);
+        }
+
+        .tariff h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        footer {
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-btn {
+            background: none;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            color: #0088cc;
+        }
+
+        .footer-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>ZERKALO</header>
+
+    <div class="content">
+        <div class="tariffs">
+            <div class="tariff" onclick="openTariff('min')">
+                <h2>Минимум тариф</h2>
+            </div>
+            <div class="tariff" onclick="openTariff('medium')">
+                <h2>Medium тариф</h2>
+            </div>
+            <div class="tariff" onclick="openTariff('pro')">
+                <h2>Тариф PRO</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <button class="footer-btn" onclick="openSubscription()">Подписка</button>
+        <button class="footer-btn" onclick="openProfile()">Профиль</button>
+    </footer>
+
+    <script>
+        function openSubscription() {
+            // Здесь можно добавить переход на страницу подписки
+            alert("Открывается страница подписки");
+            // Или использовать Telegram WebApp для открытия новой страницы
+            // Telegram.WebApp.openLink('https://yourdomain.com/subscription');
+        }
+
+        function openProfile() {
+            // Здесь можно добавить переход на страницу профиля
+            alert("Открывается страница профиля");
+            // Или использовать Telegram WebApp для открытия новой страницы
+            // Telegram.WebApp.openLink('https://yourdomain.com/profile');
+        }
+
+        function openTariff(tariffType) {
+            alert(`Выбран тариф: ${tariffType}`);
+            // Здесь можно добавить логику для обработки выбора тарифа
+        }
+
+        // Инициализация Telegram WebApp
+        Telegram.WebApp.ready();
+        Telegram.WebApp.expand();
+    </script>
+</body>
+</html>

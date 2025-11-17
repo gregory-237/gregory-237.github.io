@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NH&BE CAMPUS - Профиль</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Шапка профиля -->
+        <header class="profile-header">
+            <button class="back-btn" onclick="goBack()">← Назад</button>
+            <h1>Мой WELLNESS ПРОФИЛЬ</h1>
+        </header>
+
+        <!-- Основной контент профиля -->
+        <main class="profile-content">
+            <!-- Прогресс бар -->
+            <div class="progress-section">
+                <div class="level-indicator">
+                    <span class="level">25%</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 25%"></div>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">50%</div>
+                        <div class="stat-label">Сон</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">55%</div>
+                        <div class="stat-label">Активность</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">60%</div>
+                        <div class="stat-label">Питание</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">1400</div>
+                        <div class="stat-label">Ккал</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">58%</div>
+                        <div class="stat-label">Вода</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Информация пользователя -->
+            <div class="user-info">
+                <div class="user-avatar">Н</div>
+                <div class="user-details">
+                    <h2>Николай</h2>
+                    <p>Уровень: 25</p>
+                </div>
+            </div>
+
+            <!-- Рекомендации -->
+            <section class="recommendations">
+                <h3>Персональные рекомендации</h3>
+                <div class="recommendation-list">
+                    <div class="recommendation-item">
+                        <span>💧</span>
+                        <span>Пейте больше воды</span>
+                    </div>
+                    <div class="recommendation-item">
+                        <span>🏃</span>
+                        <span>Будьте активнее</span>
+                    </div>
+                    <div class="recommendation-item">
+                        <span>🥗</span>
+                        <span>Добавьте овощей в рацион</span>
+                    </div>
+                    <div class="recommendation-item">
+                        <span>😴</span>
+                        <span>Спите не менее 7 часов</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Нижнее меню -->
+        <footer class="bottom-nav">
+            <button class="nav-btn" onclick="showCatalog()">
+                <span>🏪</span>
+                <span>Магазин</span>
+            </button>
+            <button class="nav-btn" onclick="showChat()">
+                <span>💬</span>
+                <span>Чат</span>
+            </button>
+            <button class="nav-btn" onclick="showTasks()">
+                <span>🎯</span>
+                <span>Задания</span>
+            </button>
+            <button class="nav-btn active" onclick="showProfile()">
+                <span>👤</span>
+                <span>Профиль</span>
+            </button>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

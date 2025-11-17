@@ -17,46 +17,38 @@
 
         <!-- Основной контент профиля -->
         <main class="profile-content">
-            <!-- Прогресс бар -->
-            <div class="progress-section">
-                <div class="level-indicator">
-                    <span class="level">25%</span>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 25%"></div>
+            <!-- Статистика в кругах -->
+            <div class="stats-circles">
+                <div class="stat-circle">
+                    <div class="circle-progress" data-percent="26">
+                        <span class="circle-value">26%</span>
                     </div>
+                    <div class="circle-label">Жир</div>
                 </div>
-                
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-value">50%</div>
-                        <div class="stat-label">Сон</div>
+                <div class="stat-circle">
+                    <div class="circle-progress" data-percent="58">
+                        <span class="circle-value">58%</span>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-value">55%</div>
-                        <div class="stat-label">Активность</div>
+                    <div class="circle-label">Мышцы</div>
+                </div>
+                <div class="stat-circle">
+                    <div class="circle-progress" data-percent="55">
+                        <span class="circle-value">55%</span>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-value">60%</div>
-                        <div class="stat-label">Питание</div>
+                    <div class="circle-label">Вода</div>
+                </div>
+                <div class="stat-circle">
+                    <div class="circle-calories">
+                        <span class="calories-value">1400</span>
+                        <span class="calories-unit">Ккал</span>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-value">1400</div>
-                        <div class="stat-label">Ккал</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">58%</div>
-                        <div class="stat-label">Вода</div>
-                    </div>
+                    <div class="circle-label">Энергия</div>
                 </div>
             </div>
 
-            <!-- Информация пользователя -->
-            <div class="user-info">
-                <div class="user-avatar">Н</div>
-                <div class="user-details">
-                    <h2>Николай</h2>
-                    <p>Уровень: 25</p>
-                </div>
+            <!-- Изображение женщины -->
+            <div class="woman-silhouette">
+                <img src="img/woman.png" alt="Ваш профиль" class="woman-image">
             </div>
 
             <!-- Рекомендации -->
@@ -64,20 +56,20 @@
                 <h3>Персональные рекомендации</h3>
                 <div class="recommendation-list">
                     <div class="recommendation-item">
-                        <span>💧</span>
-                        <span>Пейте больше воды</span>
+                        <span class="recom-icon">💧</span>
+                        <span class="recom-text">Пейте больше воды</span>
                     </div>
                     <div class="recommendation-item">
-                        <span>🏃</span>
-                        <span>Будьте активнее</span>
+                        <span class="recom-icon">🌾</span>
+                        <span class="recom-text">Добавьте больше клетчатки</span>
                     </div>
                     <div class="recommendation-item">
-                        <span>🥗</span>
-                        <span>Добавьте овощей в рацион</span>
+                        <span class="recom-icon">💪</span>
+                        <span class="recom-text">Увеличьте кардио нагрузки</span>
                     </div>
                     <div class="recommendation-item">
-                        <span>😴</span>
-                        <span>Спите не менее 7 часов</span>
+                        <span class="recom-icon">😴</span>
+                        <span class="recom-text">Спите не менее 7 часов</span>
                     </div>
                 </div>
             </section>

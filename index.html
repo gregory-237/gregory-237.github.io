@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NH&BE CAMPUS - Каталог</title>
+    <title>NH&BE Wellness Club</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="app-container">
+        <!-- Заголовок -->
+        <div class="catalog-title">NH&BE Wellness Club</div>
+
         <!-- Шапка с поиском -->
         <header class="header">
             <div class="search-container">
@@ -17,34 +20,31 @@
             </div>
         </header>
 
-        <!-- Категории -->
+        <!-- Категории с эмодзи -->
         <nav class="categories">
             <button class="category-btn active" data-category="drinks">
-                <img src="img/1.png" alt="Напитки" class="category-icon">
+                <span class="category-icon">🥤</span>
                 <span>Напитки</span>
             </button>
             <button class="category-btn" data-category="pp_food">
-                <img src="img/2.png" alt="ПП-Еда" class="category-icon">
+                <span class="category-icon">🥗</span>
                 <span>ПП-Еда</span>
             </button>
             <button class="category-btn" data-category="supplements">
-                <img src="img/3.png" alt="Добавки" class="category-icon">
+                <span class="category-icon">💊</span>
                 <span>Добавки</span>
             </button>
             <button class="category-btn" data-category="promotions">
-                <img src="img/4.png" alt="Акции" class="category-icon">
+                <span class="category-icon">🔥</span>
                 <span>Акции</span>
             </button>
         </nav>
 
-        <!-- Сетка товаров -->
-        <main class="products-grid" id="productsGrid">
-            <!-- Товары будут загружаться через JavaScript -->
-        </main>
+        <!-- Остальной код без изменений -->
+        <main class="products-grid" id="productsGrid"></main>
 
-        <!-- Нижнее меню -->
         <footer class="bottom-nav">
-            <button class="nav-btn" onclick="showCatalog()">
+            <button class="nav-btn active" onclick="showCatalog()">
                 <span>🏪</span>
                 <span>Магазин</span>
             </button>
@@ -62,7 +62,6 @@
             </button>
         </footer>
     </div>
-
     <script src="js/app.js"></script>
 </body>
 </html>

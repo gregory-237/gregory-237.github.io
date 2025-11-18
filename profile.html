@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NH&BE CAMPUS - Профиль</title>
+    <title>NH&BE Wellness Club - Профиль</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="app-container">
-        <!-- Шапка профиля -->
         <header class="profile-header">
             <button class="back-btn" onclick="goBack()">← Назад</button>
-            <h1>Мой WELLNESS ПРОФИЛЬ</h1>
+            <h1>NH&BE Wellness Club</h1>
         </header>
 
-        <!-- Основной контент профиля -->
         <main class="profile-content">
-            <!-- Статистика в кругах -->
             <div class="stats-circles">
                 <div class="stat-circle">
                     <div class="circle-progress" data-percent="26">
@@ -46,36 +43,18 @@
                 </div>
             </div>
 
-            <!-- Изображение женщины -->
             <div class="woman-silhouette">
                 <img src="img/woman.png" alt="Ваш профиль" class="woman-image">
             </div>
 
-            <!-- Рекомендации -->
             <section class="recommendations">
                 <h3>Персональные рекомендации</h3>
-                <div class="recommendation-list">
-                    <div class="recommendation-item">
-                        <span class="recom-icon">💧</span>
-                        <span class="recom-text">Пейте больше воды</span>
-                    </div>
-                    <div class="recommendation-item">
-                        <span class="recom-icon">🌾</span>
-                        <span class="recom-text">Добавьте больше клетчатки</span>
-                    </div>
-                    <div class="recommendation-item">
-                        <span class="recom-icon">💪</span>
-                        <span class="recom-text">Увеличьте кардио нагрузки</span>
-                    </div>
-                    <div class="recommendation-item">
-                        <span class="recom-icon">😴</span>
-                        <span class="recom-text">Спите не менее 7 часов</span>
-                    </div>
+                <div class="recommendation-list" id="recommendationsList">
+                    <!-- Рекомендации будут загружены через JS -->
                 </div>
             </section>
         </main>
 
-        <!-- Нижнее меню -->
         <footer class="bottom-nav">
             <button class="nav-btn" onclick="showCatalog()">
                 <span>🏪</span>
@@ -95,7 +74,6 @@
             </button>
         </footer>
     </div>
-
     <script src="js/app.js"></script>
 </body>
 </html>

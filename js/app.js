@@ -3,24 +3,24 @@ const PRODUCTS_DATA = {
     "drinks": [
         {
             id: 1,
-            name: "ЭМОПЛЕ",
-            description: "Сигнал: МАРКО-МАРКОФИЛЬЕСКА",
+            name: "Коллаген",
+            description: "Вкусная шняга",
             price: "350 ₽",
             stock: 3,
             image: "img/5.png"
         },
         {
             id: 2,
-            name: "COLLAGEN",
-            description: "ПРЕВОЗМОЖНОСТЬ: МОЛМАРИ",
+            name: "Гейнер(геймер)",
+            description: "Сладкий джусик",
             price: "420 ₽",
             stock: 22,
             image: "img/6.png"
         },
         {
             id: 3,
-            name: "СТАНОВКА",
-            description: "ПЛАНСИРУЮТ С КАБИНО",
+            name: "Кайфаризация мышц",
+            description: "Сладкий качик",
             price: "290 ₽",
             stock: 4,
             image: "img/7.png"
